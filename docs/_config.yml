@@ -1,0 +1,222 @@
+# Jekyll Configuration for Alan Wake 2 Offline Setup Assistant
+# GitHub Pages & SEO Optimized Configuration
+
+# Site settings
+title: "Alan Wake 2 Offline Setup Assistant"
+tagline: "Complete DRM-Free Gaming Experience"
+description: >-
+  The ultimate offline setup assistant for Alan Wake 2. Play without Epic Games launcher, 
+  no DRM, no internet required. Full psychological horror experience with controller support 
+  and graphics optimization.
+
+# Site information
+url: "https://alan-wake-2-offline-setup-assistant.github.io"
+baseurl: "" # Subpath of your site, e.g. /blog
+repository: "Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant"
+
+# Author information
+author:
+  name: "Alan Wake 2 Offline Community"
+  email: "support@alanwake2offline.com"
+  url: "https://alan-wake-2-offline-setup-assistant.github.io"
+
+# Social profiles
+social:
+  name: "Alan Wake 2 Offline Setup Assistant"
+  links:
+    - "https://github.com/Alan-Wake-2-Offline-Setup-Assistant"
+    - "https://discord.gg/alanwake2offline"
+    - "https://twitter.com/AW2OfflineSetup"
+
+# SEO settings
+lang: "en_US"
+locale: "en_US"
+
+# SEO Plugin settings
+seo:
+  type: "Organization"
+  name: "Alan Wake 2 Offline Community"
+  logo: "/assets/logo.png"
+
+# Twitter Card settings
+twitter:
+  username: "AW2OfflineSetup"
+  card: "summary_large_image"
+
+# Facebook OpenGraph settings
+facebook:
+  app_id: # Optional
+  publisher: # Optional
+  admins: # Optional
+
+# Google Analytics (optional)
+google_analytics: # GA4 tracking ID (e.g., G-XXXXXXXXXX)
+google_site_verification: # Google Search Console verification
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-avatar
+  - jekyll-gist
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Download"
+    url: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant/releases"
+  - title: "Documentation"
+    url: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant/wiki"
+  - title: "Community"
+    url: "https://discord.gg/alanwake2offline"
+  - title: "Support"
+    url: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant/issues"
+
+# Gaming-specific metadata
+game:
+  title: "Alan Wake 2"
+  developer: "Remedy Entertainment"
+  publisher: "Epic Games"
+  genre: "Psychological Horror"
+  platforms: ["PC", "PlayStation", "Xbox"]
+  release_year: 2023
+  
+# Project metadata
+project:
+  type: "Gaming Tool"
+  category: "Setup Assistant"
+  license: "MIT"
+  version: "2.1.0"
+  supported_platforms: ["Windows", "Linux"]
+  offline_first: true
+  drm_free: true
+
+# Kramdown settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - SECURITY.md
+  - CHANGELOG.md
+  - .gitignore
+  - .github/
+  - _config.yml
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+
+# Include in processing
+include:
+  - _pages
+  - _posts
+  - .htaccess
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /guides/:name/
+  downloads:
+    output: true
+    permalink: /downloads/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Alan Wake 2 Offline Community"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+      author: "Alan Wake 2 Offline Community"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author: "Alan Wake 2 Offline Community"
+
+# GitHub metadata
+github:
+  repository_nwo: "Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant"
+  repository_name: "alan-wake-2-offline-setup-assistant"  
+  owner_name: "Alan-Wake-2-Offline-Setup-Assistant"
+  owner_url: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant"
+  repository_url: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant"
+  zip_url: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant/zipball/main"
+  tar_url: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant/tarball/main"
+  clone_url: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant.git"
+  releases_url: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant/releases"
+  issues_url: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant/issues"
+
+# Custom variables for templates
+custom:
+  primary_color: "#FF6B6B"
+  secondary_color: "#4ECDC4"
+  accent_color: "#45B7D1"
+  gaming_theme: true
+  offline_first: true
+  drm_free: true
+  
+# Contact information
+contact:
+  email: "support@alanwake2offline.com"
+  discord: "https://discord.gg/alanwake2offline"
+  github: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant"
+  
+# Download links
+downloads:
+  windows: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant/releases/latest/download/alan-wake-2-setup-windows.zip"
+  linux: "https://github.com/Alan-Wake-2-Offline-Setup-Assistant/alan-wake-2-offline-setup-assistant/releases/latest/download/alan-wake-2-setup-linux.tar.gz"
+  
+# Features for landing page
+features:
+  - title: "DRM-Free Gaming"
+    description: "Play without Epic Games launcher or any online verification"
+    icon: "🚫"
+  - title: "Offline-First"
+    description: "Complete gaming experience without internet connection"
+    icon: "🔒"
+  - title: "Multi-Controller"
+    description: "Support for Xbox, PlayStation, and generic controllers"
+    icon: "🎮"
+  - title: "Graphics Optimization"
+    description: "Pre-configured settings for different hardware"
+    icon: "⚙️" 

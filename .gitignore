@@ -1,0 +1,366 @@
+# 🔒 Alan Wake 2 Offline Setup Assistant - .gitignore
+
+# ===================================
+# CRITICAL: NEVER COMMIT THESE FILES
+# ===================================
+
+# Internal system files and credentials
+.internal/GITHUB_CREDENTIALS.md
+.internal/
+*.credentials.md
+*.env
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Personal tokens and API keys
+*token*
+*key*
+*secret*
+*.pem
+*.p12
+*.pfx
+
+# ===================================
+# OPERATING SYSTEM FILES
+# ===================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===================================
+# DEVELOPMENT ENVIRONMENTS
+# ===================================
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.metadata
+.settings/
+*.sublime-*
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===================================
+# BUILD AND DISTRIBUTION
+# ===================================
+
+# Build outputs
+build/
+dist/
+out/
+target/
+bin/
+obj/
+*.exe
+*.msi
+*.deb
+*.rpm
+*.dmg
+*.pkg
+*.app
+*.appx
+
+# Temporary build files
+*.tmp
+*.temp
+*.cache
+.cache/
+node_modules/
+bower_components/
+
+# ===================================
+# GAMING SPECIFIC
+# ===================================
+
+# Game files (we don't store actual game content)
+*.pak
+*.wad
+*.big
+*.bik
+*.dat
+*.bin
+game_files/
+game_content/
+assets/game/
+
+# Save games and user data
+saves/
+profiles/
+user_data/
+*.save
+*.sav
+
+# Game logs and crashes
+*.log
+*.crash
+crash_dumps/
+logs/
+
+# ===================================
+# DOCUMENTATION BUILDS
+# ===================================
+
+# Documentation generators
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+docs/_site/
+site/
+
+# GitBook
+_book/
+.gitbook/
+
+# ===================================
+# ARCHIVES AND DOWNLOADS
+# ===================================
+
+# Compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Download cache
+downloads/
+temp_downloads/
+.download/
+
+# ===================================
+# TESTING AND COVERAGE
+# ===================================
+
+# Test results
+*.trx
+*.coverage
+coverage/
+.nyc_output/
+test-results.xml
+junit.xml
+
+# ===================================
+# PACKAGE MANAGERS
+# ===================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===================================
+# SECURITY AND PRIVACY
+# ===================================
+
+# Certificate files
+*.cer
+*.crt
+*.der
+*.key
+*.p7b
+*.p7c
+*.p12
+*.pfx
+*.pem
+
+# SSH keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pub
+
+# GPG keys
+*.gpg
+*.asc
+secring.*
+
+# ===================================
+# RUNTIME AND TEMPORARY
+# ===================================
+
+# Process files
+*.pid
+*.seed
+*.pid.lock
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temp/
+
+# ===================================
+# GAMING COMMUNITY
+# ===================================
+
+# User configurations (keep private)
+user_config.ini
+personal_settings.cfg
+*.user.config
+
+# Beta/debug content
+beta/
+debug/
+development/
+test_content/
+
+# Community content (if not meant to be shared)
+mods/
+custom_content/
+user_mods/
+
+# ===================================
+# GITHUB PAGES (if using)
+# ===================================
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# ===================================
+# MISCELLANEOUS
+# ===================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Lock files
+*.lock
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Media files (large)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+*.mp3
+*.wav
+*.flac
+*.ogg
+
+# ===================================
+# PROJECT SPECIFIC
+# ===================================
+
+# Setup assistant specific
+setup_logs/
+installation_cache/
+temp_setup/
+user_preferences/
+*.setup.log
+
+# Performance data
+performance_data/
+benchmarks/
+*.perf
+
+# ===================================
+# FINAL NOTES
+# ===================================
+
+# Add your own patterns here
+# Remember: Never commit sensitive data!
+# Keep the offline-first principle intact 
